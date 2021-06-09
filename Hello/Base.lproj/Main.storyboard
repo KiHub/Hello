@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="c1Q-TX-0Ox">
-                                <rect key="frame" x="19.5" y="261" width="375" height="374.5"/>
+                                <rect key="frame" x="42" y="246" width="330" height="404.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekday finder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J23-vk-AYe">
-                                        <rect key="frame" x="87.5" y="0.0" width="200" height="37"/>
+                                        <rect key="frame" x="65" y="0.0" width="200" height="37"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="27"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="bJb-q1-Fiq">
-                                        <rect key="frame" x="22.5" y="72" width="330" height="34"/>
+                                        <rect key="frame" x="0.0" y="72" width="330" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4u9-38-NP9">
                                                 <rect key="frame" x="0.0" y="0.0" width="39" height="34"/>
@@ -46,7 +46,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="ORm-Uy-6Tf">
-                                        <rect key="frame" x="22.5" y="141" width="330" height="34"/>
+                                        <rect key="frame" x="0.0" y="141" width="330" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jt9-4u-Ciw">
                                                 <rect key="frame" x="0.0" y="0.0" width="66" height="34"/>
@@ -66,7 +66,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="Eag-82-F3U">
-                                        <rect key="frame" x="22.5" y="210" width="330" height="34"/>
+                                        <rect key="frame" x="0.0" y="210" width="330" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYd-d3-FAV">
                                                 <rect key="frame" x="0.0" y="0.0" width="43" height="34"/>
@@ -85,33 +85,52 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here you will see the day of the week" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8W-V9-bG5">
-                                        <rect key="frame" x="0.0" y="279" width="375" height="30.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here you will see the day of the week" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8W-V9-bG5">
+                                        <rect key="frame" x="64" y="279" width="202" height="60.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="202" id="MtE-uk-qpk"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfF-67-tTg">
-                                        <rect key="frame" x="158.5" y="344.5" width="58" height="30"/>
+                                        <rect key="frame" x="100" y="374.5" width="130" height="30"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <state key="normal" title="Find day">
-                                            <color key="titleColor" red="0.44298480309999999" green="0.3087007705" blue="0.36542166100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="findDay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIm-Ig-qLZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="lfF-67-tTg" firstAttribute="leading" secondItem="c1Q-TX-0Ox" secondAttribute="leading" priority="900" constant="100" id="WvZ-Nj-brA"/>
+                                    <constraint firstAttribute="trailing" secondItem="lfF-67-tTg" secondAttribute="trailing" priority="900" constant="100" id="avk-Lp-2sm"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                         <constraints>
                             <constraint firstItem="c1Q-TX-0Ox" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5vx-FE-RAU"/>
+                            <constraint firstItem="c1Q-TX-0Ox" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="Rpz-Mi-MKS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c1Q-TX-0Ox" secondAttribute="trailing" constant="42" id="YP9-Cm-Jbs"/>
                             <constraint firstItem="c1Q-TX-0Ox" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q0S-rn-evc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateTF" destination="R4v-RG-jeg" id="Pwc-9s-vdT"/>
+                        <outlet property="findDayLabel" destination="lfF-67-tTg" id="9U7-6x-obQ"/>
+                        <outlet property="monthTF" destination="LhA-oB-ZMw" id="LBt-Dq-f2G"/>
+                        <outlet property="resultLabel" destination="M8W-V9-bG5" id="ZF2-RV-V15"/>
+                        <outlet property="yearTF" destination="hd2-oo-QHd" id="ugL-tm-jZ7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.23188405797103" y="92.410714285714278"/>
+            <point key="canvasLocation" x="136.23188405797103" y="92.119565217391312"/>
         </scene>
     </scenes>
     <resources>
